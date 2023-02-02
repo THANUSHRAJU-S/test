@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#63ff00">
+
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:padding="5sp"
+                    android:src="@drawable/baseline_diversity_1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="NAMMA CHRIST"
+                    android:textSize="30sp"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:paddingTop="30sp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:rowCount="2"
+            android:columnCount="2">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="#3edad8"
+                app:cardCornerRadius="20sp"
+                android:layout_margin="10sp"
+                >
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Faculty Location"-->
+                <!--                    android:textSize="20sp"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    android:paddingVertical="30sp"-->
+                <!--                    android:layout_gravity="center"/>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/locpic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_location_on_24"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/locname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Faculty Location"
+                        android:textAlignment="center"
+                        android:textColor="#191919"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="#3edad8"
+                app:cardCornerRadius="20sp"
+                android:layout_margin="10sp"
+                >
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Wheelchair Availabilty"-->
+                <!--                    android:textSize="20sp"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    android:paddingVertical="30sp"-->
+                <!--                    android:layout_gravity="center"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/wheelpic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_wheelchair_pickup_24"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/wheelname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Availability of Wheelchair"
+                        android:textAlignment="center"
+                        android:textColor="#191919"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="#3edad8"
+                app:cardCornerRadius="20sp"
+                android:layout_margin="10sp"
+                >
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="1"-->
+                <!--                    android:textSize="30sp"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    android:paddingVertical="30sp"-->
+                <!--                    android:layout_gravity="center"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_foreground"
+                        android:layout_gravity="center"/>
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="INFO"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="#3edad8"
+                app:cardCornerRadius="20sp"
+                android:layout_margin="10sp"
+                >
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="INFO"-->
+                <!--                    android:textSize="30sp"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    android:paddingVertical="30sp"-->
+                <!--                    android:layout_gravity="center"/>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/infopic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_info_24"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/infoname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="INFO"
+                        android:textAlignment="center"
+                        android:textColor="#191919"
+                        android:fontFamily="casual"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>
